@@ -3,7 +3,7 @@
   --secondary-text-color: rgba(255, 255, 255, 1);
   --title-text-color: rgba(33, 33, 33, 1);
   --accent-color: rgba(33, 150, 243, 1);
-  --primary-background-color: #e5e5e5;
+  --primary-background-color: #ffffff;
   --secondary-background-color: rgba(47, 48, 58, 1);
   --third-background-color: rgba(245, 244, 250, 1);
 }
@@ -11,7 +11,7 @@
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-size: ;
+  font-size: 14px;
   background-color: var(--primary-background-color);
 }
 .list {
@@ -90,6 +90,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.hero .primary-button {
+  font-weight: 700;
+}
 
 /* Sections */
 
@@ -105,7 +108,7 @@ body {
 
 /* Feacher-list */
 
-.feacher-list .title {
+.feacher-list-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -113,7 +116,7 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-.feacher-list .text {
+.feacher-list-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -121,7 +124,7 @@ body {
 }
 /* Work-list */
 
-.work-list .title {
+.work-list-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -130,10 +133,10 @@ body {
   letter-spacing: 0.03em;
 }
 /* Section command */
-.section {
+.command-section {
   background-color: var(--third-background-color);
 }
-.section .title {
+.command-section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -141,7 +144,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.section-title {
+.command-list-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -149,7 +152,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.section-text {
+.command-list-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -162,7 +165,7 @@ body {
 .button-primary {
   font-family: inherit;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -202,7 +205,7 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-.footer .address {
+.address-link {
   color: var(--secondary-text-color);
   text-decoration: none;
   font-style: normal;
@@ -211,30 +214,23 @@ body {
   line-height: 1.171;
   letter-spacing: 0.03em;
 }
-.footer .link {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+
 /*Портфоліо*/
-.benefits .section-title {
+.benefits-list-title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.benefits .section-text {
+.benefits-list-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.benefits-list {
+.benefits-list a {
   text-decoration: none;
+  color: var(--title-text-color);
 }
