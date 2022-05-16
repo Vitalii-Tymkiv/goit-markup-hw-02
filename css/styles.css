@@ -6,6 +6,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: rgba(47, 48, 58, 1);
   --third-background-color: rgba(245, 244, 250, 1);
+  --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   font-size: 14px;
   background-color: var(--primary-background-color);
 }
-.list {
+ul {
   list-style: none;
 }
 
@@ -65,11 +66,15 @@ body {
 
 .auth-nav-link {
   color: var(--primary-text-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
+  font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.footer .auth-nav-link {
+  color: var(--footer-link-color);
 }
 
 .auth-nav-link:hover,
@@ -145,6 +150,7 @@ body {
   letter-spacing: 0.03em;
 }
 .command-list-title {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -158,6 +164,9 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.command-section-image {
+  background-color: var(--primary-background-color);
 }
 
 /* Button */
