@@ -15,13 +15,37 @@ body {
   font-size: 14px;
   background-color: var(--primary-background-color);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .accent {
   color: var(--accent-color);
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ЛОГОТИП */
 .logo {
   color: var(--title-text-color);
@@ -43,8 +67,16 @@ ul {
 
 .header {
   background-color: var(--secondary-text-color);
+  margin-bottom: 0;
 }
 
+/*Navigation*/
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
 /* Site nav */
 .link {
   color: var(--title-text-color);
@@ -62,7 +94,38 @@ ul {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.site-nav {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* auth-nav */
+
+.auth-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 331px;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
 
 .auth-nav-link {
   color: var(--primary-text-color);
@@ -85,8 +148,11 @@ ul {
 /* Hero */
 .hero {
   background-color: var(--secondary-background-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -94,6 +160,8 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  background-color: tomato;
 }
 .hero .primary-button {
   font-weight: 700;
@@ -112,16 +180,21 @@ ul {
 }
 
 /* Feacher-list */
+.feachers-list {
+  margin-top: 0;
+}
 
-.feacher-list-title {
+.feachers-list-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.feacher-list-text {
+.feachers-list-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -166,6 +239,8 @@ ul {
   letter-spacing: 0.03em;
 }
 .command-section-image {
+}
+.command-section-item {
   background-color: var(--primary-background-color);
 }
 
@@ -177,9 +252,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
@@ -208,6 +281,25 @@ ul {
 .button-secondary:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+}
+
+.button-primary-main {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.button-primary-main:hover,
+.button-primary-main:focus {
+  color: var(--secondary-text-color);
+  background-color: #118ce8;
 }
 /* footer */
 .footer {
